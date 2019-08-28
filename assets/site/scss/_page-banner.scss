@@ -1,0 +1,65 @@
+.page-banner {
+	@apply .text-milk;
+}
+
+.page-banner main {
+	@apply .mb-8;
+}
+
+.page-banner .wrap {
+	@apply .px-8;
+}
+
+.page-banner h4 {
+	@apply .mb-6;
+}
+
+.page-banner h1 {
+	font-size: 2.2rem;
+	@apply .leading-tight;
+}
+
+.page-banner .wrap {
+	@apply .flex;
+	@apply .items-center;
+}
+
+.page-banner .wrap > div:last-child {
+	@apply .hidden;
+}
+
+@media screen and (min-width: 600px) {
+	.page-banner .wrap {
+		@apply .max-w-4xl;
+		@apply .mx-auto;
+	}
+
+	.page-banner .wrap > div:last-child {
+		@apply .block;
+	}
+
+	.page-banner .wrap div {
+		@apply .w-1/2;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.page-banner h1 {
+		font-size: 3rem;
+		@apply .leading-none;
+	}
+
+	.page-banner h4 {
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.page-banner .wrap {
+		@apply .max-w-5xl;
+	}
+
+	.page-banner h1 {
+		font-size: 3.5rem;
+	}
+}

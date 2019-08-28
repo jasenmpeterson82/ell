@@ -1,0 +1,129 @@
+html,
+main {
+	@apply .overflow-x-hidden;
+}
+
+body {
+    @apply .bg-charcoalDarker;
+}
+
+.component__wrap {
+	@apply .flex;
+	@apply .flex-col;
+	@apply .justify-between;
+	@apply .min-h-screen;
+	@apply .relative;
+}
+
+.section {
+	@apply .bg-charcoalDarker;
+}
+
+.section * {
+	transition: all 0.3s ease;
+}
+
+.ell__simple-bar {
+	height: 45px;
+}
+
+.ell__simple-bar .simplebar-track.simplebar-vertical .simplebar-scrollbar {
+	width: 4px;
+}
+
+.ell__simple-bar .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+	height: 4px;
+}
+
+.ell__simple-bar .simplebar-scrollbar::before {
+	background: rgba(0, 0, 0, 0.50);
+	border-radius: 0;
+}
+
+.site-curtain {
+	@apply .fixed;
+	@apply .h-screen;
+	@apply .w-screen;
+	@apply .top-0;
+	@apply .right-0;
+}
+
+.site-curtain-black {
+	@apply .bg-charcoalDarker;
+	z-index: 500000000000;
+	transform-origin: left center;
+}
+
+.site-curtain-white {
+	@apply .bg-beige;
+	z-index: 510000000000;
+	transform: scaleX(0);
+	transform-origin: right center;
+}
+
+.lottie__animation-curtain {
+	width: 350px;
+	@apply .h-auto;
+	@apply .absolute;
+	@apply .top-0;
+	@apply .bottom-0;
+	@apply .left-0;
+	@apply .right-0;
+	@apply .m-auto;
+	@apply .pointer-events-none;
+	z-index: 520000000000;
+}
+
+.plyr--video .plyr__controls {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.plyr--video .plyr__controls {
+	@apply .justify-start;
+}
+
+.plyr__progress {
+	@apply .flex-grow;
+	@apply .w-auto;
+	@apply .left-0;
+	margin-right: 0;
+}
+
+.plyr .ell__custom-play-button {
+	width: 100px;
+	height: 100px;
+	@apply .absolute;
+	@apply .m-auto;
+	@apply .top-0;
+	@apply .bottom-0;
+	@apply .left-0;
+	@apply .right-0;
+	@apply .z-20;
+	transition: all 0.5s ease-out;
+}
+
+.plyr .ell__custom-play-button.playing {
+	@apply .opacity-0;
+}
+
+.plyr__progress__buffer,
+.plyr__progress input[type=range] {
+	@apply .mx-0;
+	width: 99%;
+}
+
+button[data-plyr="mute"] {
+	margin-left: 15px;
+}
+
+@media screen and (min-width: 767px) {
+	.lottie__animation-curtain {
+		width: 650px;
+	}
+
+	.plyr .ell__custom-play-button {
+		width: 200px;
+		height: 200px;
+	}
+}

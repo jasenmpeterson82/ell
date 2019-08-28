@@ -1,0 +1,18 @@
+.content__block-simple-rotator.content__block {
+	@apply .block;
+}
+
+.content__block-simple-rotator .carousel-cell {
+	@apply .w-full;
+	@apply .h-auto;
+}
+
+.content__block-simple-rotator .carousel-cell img {
+	@apply .mx-auto;
+}
+
+.content__block-simple-rotator .flickity-button {
+	background: rgba(156, 156, 156, 0.8);
+	@apply .text-mustard;
+	transition: all 0.5s ease-out;
+}

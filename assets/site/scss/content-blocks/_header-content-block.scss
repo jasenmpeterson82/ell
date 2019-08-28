@@ -1,0 +1,38 @@
+.content__block-header {
+	@apply .flex-col;
+}
+
+.content__block-header h4 {
+	@apply .mb-4;
+	font-family: pt-sans, sans-serif;
+}
+
+.content__block-header h1 {
+	font-size: 2.2rem;
+	@apply .leading-tight;
+	@apply .text-beige;
+}
+
+.content__block-header header {
+	@apply .mb-12;
+}
+
+.headline .grey {
+	@apply .text-gray;
+}
+
+.headline br {
+	@apply .hidden;
+}
+
+@media screen and (min-width: 767px) {
+	.content__block-header {
+		width: 55%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.headline br {
+		@apply .inline-block;
+	}
+}

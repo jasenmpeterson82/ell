@@ -1,0 +1,270 @@
+.page-strategic-brand-relationships .process-lottie__animation figure {
+	width: 19rem;
+}
+
+.page-strategic-brand-relationships .content__block-sidebar .wrap {
+	@apply .pt-12;
+}
+
+.page-strategic-brand-relationships .content__block-grid {
+	margin: 0 calc(-50vw + 50%);
+	margin-bottom: 0 !important;
+	@apply .bg-beige;
+	@apply .py-16;
+	@apply .px-8;
+	@apply relative;
+	@apply .w-screen;
+}
+
+.page-strategic-brand-relationships .content__block-grid main {
+	grid-template-columns: auto;
+	grid-row-gap: 3.5rem;
+	@apply .max-w-2xl;
+	@apply .mx-auto;
+}
+
+.page-strategic-brand-relationships .content__block-grid main figure {
+	@apply .w-full;
+}
+
+.page-strategic-brand-relationships .content__block-grid main img {
+	@apply .mx-auto;
+}
+
+.page-strategic-brand-relationships .content__block-grid main div {
+	@apply .px-8;
+	@apply .flex;
+	@apply .items-center;
+}
+
+.page-strategic-brand-relationships .content__blocks .content__block-content,
+.page-strategic-brand-relationships .content__blocks .content__block-intro {
+	order: -2;
+}
+
+.page-strategic-brand-relationships .content__block-content {
+	@apply .pt-0;
+	@apply .max-w-2xl;
+	@apply .mx-auto;
+}
+
+.page-strategic-brand-relationships .content__block.content__block-columned-content {
+	font-size: 1.6rem;
+	margin: 0 calc(-50vw + 50%);
+	@apply .justify-center;
+	@apply .w-screen;
+	@apply .bg-charcoal;
+	@apply .text-center;
+	@apply .pt-0;
+	@apply .pb-16;
+}
+
+.page-strategic-brand-relationships .content__block.content__block-columned-content div:not(:last-child) {
+	@apply .mb-0;
+}
+
+.page-strategic-brand-relationships .content__block.content__block-columned-content div:last-child {
+	order: -1;
+}
+
+.page-strategic-brand-relationships .content__block.content__block-columned-content ul li::after {
+	@apply .block;
+	@apply .w-24;
+	@apply .mt-3;
+	@apply .mx-auto;
+}
+
+.page-strategic-brand-relationships .content__block.content__block-columned-content ul li:nth-of-type(1) {
+	@apply .text-orange;
+}
+
+.page-strategic-brand-relationships .content__block.content__block-columned-content ul li:nth-of-type(1)::after {
+	content: url('/discovery-arrow.svg');
+}
+
+.page-strategic-brand-relationships .content__block.content__block-columned-content ul li:nth-of-type(2)::after {
+	content: url('/marketing-arrow.svg');
+}
+
+.page-strategic-brand-relationships .content__block.content__block-columned-content ul li:nth-of-type(3) {
+	@apply .text-metallicGold;
+}
+
+.page-strategic-brand-relationships .content__block.content__block-columned-content ul li:nth-of-type(3)::after {
+	content: url('/creative-strategy-arrow.svg');
+}
+
+.page-strategic-brand-relationships .content__block.content__block-columned-content ul li:nth-of-type(4) {
+	@apply .text-blueberryLighter;
+}
+
+.page-strategic-brand-relationships .content__block.content__block-columned-content ul li:nth-of-type(4)::after {
+	content: url('/creative-production-arrow.svg');
+}
+
+.page-strategic-brand-relationships .content__block.content__block-columned-content h3 {
+	@apply .lowercase;
+	font-size: 2rem;
+}
+
+.page-strategic-brand-relationships .content__block-columned-content__image {
+	@apply .flex-grow;
+}
+
+@media screen and (min-width: 550px) {
+	.page-strategic-brand-relationships .content__block-grid main {
+		grid-template-columns: auto auto auto;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	.page-strategic-brand-relationships .content__block-sidebar .wrap {
+		@apply .pt-8;
+	}
+
+	.page-strategic-brand-relationships .content__block-intro {
+		width: 50%;
+		max-width: 792px;
+		@apply .py-0;
+		@apply .flex-col;
+		@apply .m-0;
+		@apply .pl-16;
+	}
+
+	.page-strategic-brand-relationships .content__block-sidebar {
+		@apply .mt-0;
+	}
+
+	.page-strategic-brand-relationships .content__block-intro header,
+	.page-strategic-brand-relationships .content__block-intro article {
+		max-width: none;
+		@apply .w-full;
+	}
+
+	.page-strategic-brand-relationships .content__block-sidebar figure {
+		height: 600px;
+		top: 5rem;
+		top: 5rem;
+		left: -10rem;
+	}
+
+	.page-strategic-brand-relationships .content__block-content,
+	.page-strategic-brand-relationships .content__block-intro {
+		order: initial;
+	}
+
+	.page-strategic-brand-relationships .content__block.content__block-columned-content {
+		@apply .items-center;
+		@apply .flex-col;
+		@apply .py-16;
+		@apply .mt-48;
+	}
+
+	.page-strategic-brand-relationships .content__block-columned-content[data-row="2"] div:first-of-type {
+		@apply .h-full;
+	}
+
+	.page-strategic-brand-relationships .content__block-columned-content div[data-v-e928f3f6]:not(:last-child) {
+		@apply .mb-6;
+	}
+
+	.page-strategic-brand-relationships .content__block.content__block-columned-content div:last-child {
+		order: initial;
+	}
+
+	.page-strategic-brand-relationships .content__block-grid main div {
+		@apply .px-0;
+	}
+
+	.page-strategic-brand-relationships .content__block-grid main {
+		grid-template-columns: auto auto auto auto;
+		grid-column-gap: 2.5rem;
+		grid-row-gap: 3.5em;
+	}
+}
+
+@media screen and (min-width: 990px) {
+	.page-strategic-brand-relationships .content__block.content__block-columned-content {
+		@apply .items-start;
+		@apply .text-left;
+		@apply .flex-row;
+		@apply .py-48;
+		@apply .px-16;
+	}
+
+	.page-strategic-brand-relationships .content__block.content__block-columned-content ul li::after {
+		@apply .mx-0;
+		@apply .mt-0;
+	}
+
+	.page-strategic-brand-relationships .content__block-columned-content div:nth-child(2) {
+		width: 24rem;
+		@apply .mr-4;
+	}
+
+	.page-strategic-brand-relationships .content__block-columned-content[data-row="2"] div:first-of-type {
+		@apply .h-full;
+	}
+
+	.page-strategic-brand-relationships .content__block-columned-content[data-row="2"] div:last-of-type {
+		@apply .mb-0;
+	}
+
+	.page-strategic-brand-relationships .content__block.content__block-columned-content div:last-child {
+		order: initial;
+	}
+
+	.page-strategic-brand-relationships .content__block.content__block-columned-content ul li:not(:last-child) {
+		@apply .mb-2;
+	}
+
+	.page-strategic-brand-relationships .content__block-columned-content div:first-child {
+		width: 10rem;
+		@apply .pr-12;
+	}
+
+	.page-strategic-brand-relationships .content__block-columned-content h3 {
+		@apply .text-right;
+	}
+
+	.page-strategic-brand-relationships .process-lottie__animation figure {
+		width: 22rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.page-strategic-brand-relationships .content__block-columned-content div:first-child {
+		width: 12rem;
+	}
+
+	.page-strategic-brand-relationships .content__block.content__block-columned-content h3 {
+		font-size: 3rem;
+	}
+
+	.page-strategic-brand-relationships .content__block-intro {
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.page-strategic-brand-relationships .content__block-grid main {
+		@apply .max-w-4xl;
+	}
+
+	.page-strategic-brand-relationships .content__block-grid main div {
+		@apply .px-10;
+	}
+
+	.page-strategic-brand-relationships .content__block.content__block-columned-content {
+		font-size: 1.6rem;
+	}
+
+	.page-strategic-brand-relationships .process-lottie__animation figure {
+		width: 30rem;
+	}
+
+	.page-strategic-brand-relationships .content__block-sidebar figure {
+		right: -10rem;
+		left: auto;
+	}
+}

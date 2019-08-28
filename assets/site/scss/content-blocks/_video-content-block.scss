@@ -1,0 +1,23 @@
+.content__block-video,
+.content__block-video .plyr {
+	@apply .w-full;
+}
+
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded=true] {
+	background: #E7573D;
+}
+
+.plyr__control--overlaid,
+.plyr__control.plyr__tab-focus {
+	background: rgba(231, 87, 61, 0.8);
+}
+
+.plyr--full-ui input[type=range] {
+	@apply .text-ketchup;
+}
+
+.plyr__control.plyr__tab-focus {
+	box-shadow: rgba(231, 87, 61, 0.2);
+}

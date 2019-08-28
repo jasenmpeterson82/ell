@@ -1,0 +1,76 @@
+.page {
+	padding-top: 8rem;
+}
+
+.page__background-image {
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	min-height: 100vh;
+	@apply .absolute;
+	@apply .w-full;
+	@apply .top-0;
+	@apply .left-0;
+}
+
+.page main {
+	@apply .overflow-x-hidden;
+}
+
+.page h1 {
+	@apply .mb-6;
+}
+
+.page h4 {
+	@apply .font-bold;
+}
+
+.page-generic {
+	padding-top: 10rem;
+}
+
+.page-generic .content__blocks {
+	@apply .max-w-2xl;
+	@apply .mx-auto;
+	@apply .pb-24;
+}
+
+.page-generic ol:not(:last-child),
+.page-generic ul:not(:last-child) {
+	@apply .mb-4;
+}
+
+.page-generic ol,
+.page-generic ul {
+	padding-left: 1rem;
+}
+
+.page-generic ol {
+	list-style-type: decimal;
+}
+
+.page-generic ul {
+	list-style-type: disc;
+}
+
+.page-generic ol li:not(:last-child),
+.page-generic ul li:not(:last-child) {
+	@apply .mb-4;
+}
+
+@media screen and (min-width: 1200px) {
+	.page:not(.page-home):not(.page-about-us):not(.page-contact):not(.page-work) {
+		padding-top: 15rem;
+	}
+}
+
+@media screen and (min-height: 1130px) {
+	.page__background-image {
+		min-height: 60vh;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.page {
+		padding-top: 6.25rem;
+	}
+}

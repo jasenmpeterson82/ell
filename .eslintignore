@@ -1,0 +1,5 @@
+/node_modules
+/test
+jest.config.js
+nuxt.config.js
+tailwind.config.js

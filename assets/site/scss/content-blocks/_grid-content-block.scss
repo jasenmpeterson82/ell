@@ -1,0 +1,26 @@
+.content__block-grid main {
+	display: grid;
+	@apply .w-full;
+}
+
+.content__block-grid main div figure {
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+}
+
+@media screen and (min-width: 767px) {
+	.grid-item__count-2 main {
+		grid-template-columns: auto auto;
+		grid-gap: 1rem;
+	}
+
+	.grid-item__count-3 main {
+		grid-template-columns: auto auto auto;
+		grid-gap: 1rem;
+	}
+
+	.grid-item__count-4 main {
+		grid-template-columns: auto auto auto auto;
+		grid-gap: 1rem;
+	}
+}

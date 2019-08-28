@@ -1,0 +1,225 @@
+.page-work main {
+	@apply .px-8;
+	@apply .pb-16;
+	max-width: 1920px;
+	@apply .mx-auto;
+}
+
+.page-work__header h1 {
+	font-size: 2rem;
+}
+
+// project type selection
+.work-component__navigation nav {
+	@apply .mx-auto;
+	@apply .flex;
+	@apply .flex-col;
+	@apply .items-start;
+	font-family: xants, sans-serif;
+}
+
+.work-component__navigation::after {
+	content: '';
+	width: 1px;
+	height: 90px;
+	@apply .my-8;
+	@apply .block;
+	@apply .bg-milk;
+}
+
+.work-component__navigation nav button:not(:last-child) {
+	@apply .mb-4;
+}
+
+.work-component__navigation button.active {
+	@apply .text-mustard;
+	@apply .cursor-default;
+}
+
+.work-component__navigation button {
+	transition: all 0.5s ease-out;
+	font-size: 1.3rem;
+}
+
+.work-component__navigation button:not(.active):hover {
+	@apply .text-ketchup;
+}
+
+.projects-section {
+	@apply .pt-24;
+}
+
+.projects-section figure {
+	backgroud-size: contain !important;
+	background-position: center !important;
+	@apply .relative;
+}
+
+.projects-section figure a {
+	@apply .block;
+	@apply .relative;
+}
+
+.projects-section figure h3 {
+	top: -3rem;
+	font-family: pt-serif-pro, sans-serif;
+	@apply .text-gray;
+	@apply .absolute;
+	@apply .lowercase;
+	@apply .left-0;
+}
+
+.projects-section .tint {
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: all 0.5s ease-out;
+	@apply .absolute;
+	@apply .z-10;
+	@apply .w-full;
+	@apply .h-full;
+	@apply .opacity-0;
+}
+
+.projects-section figcaption {
+	transform-origin : 50% 100%;
+	transform: scaleY(0);
+	@apply .absolute;
+	@apply .w-full;
+	@apply .bottom-0;
+	@apply .bg-mustard;
+	@apply .text-milk;
+	@apply .text-center;
+	@apply .z-20;
+}
+
+.projects-section figcaption div {
+	@apply .py-12;
+	@apply .px-8;
+}
+
+.projects-section figcaption h1 {
+	@apply .mb-0;
+	@apply .lowercase;
+}
+.projects-section figcaption h2 {
+	@apply .mb-2;
+}
+
+
+.projects-section figcaption h1,
+.projects-section figcaption h2 {
+	@apply .lowercase;
+	@apply .leading-none;
+}
+
+.projects-section figcaption h1 {
+	font-size: 2.2rem;
+}
+
+.projects-section figcaption h2 {
+	font-size: 1.3rem;
+}
+
+.projects-section figure.project:not(:last-child) {
+	@apply .mb-24;
+}
+
+.projects-section .project-arrow {
+	width: 2.5rem;
+	height: 61px;
+	right: -1rem;
+	@apply .absolute;
+	@apply .top-0;
+	@apply .bottom-0;
+	@apply .my-auto;
+}
+
+.projects-section .project-arrow svg {
+	transform: scaleX(-1);
+	@apply .max-w-full;
+}
+
+figure.project a:hover .tint {
+	@apply .opacity-100;
+}
+
+.projects-section figcaption,
+.projects-section figcaption div,
+.projects-section .project-arrow {
+	@apply .opacity-0;
+	transition: all 0.3s ease-out;
+}
+
+.projects-section figcaption {
+	transition-delay: 0.8s;
+}
+
+figure.project a:hover figcaption {
+	transform: scaleY(1);
+	transition-delay: 0s;
+	@apply .opacity-100;
+}
+
+figure.project figcaption div {
+	transform: translateY(15px);
+	transition-delay: 0.37s;
+}
+
+figure.project a:hover figcaption div {
+	transform: translateY(0);
+	transition-delay: 0.35s;
+	@apply .opacity-100;
+}
+
+.projects-section .project-arrow {
+	transform: translateX(-15px);
+	transition-delay: 0.35s;
+}
+
+.projects-section a:hover .project-arrow {
+	transform: translateX(0);
+	transition-delay: 0.60s;
+	@apply .opacity-100;
+}
+
+@media screen and (min-width: 767px) {
+	.page-work main {
+		@apply .px-16;
+	}
+
+	.page-work__header h1 {
+		font-size: 4rem;
+	}
+
+	.projects-section figure {
+		max-width: 500px;
+	}
+
+	.projects-section {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-column-gap: 6rem;
+		grid-row-gap: 6rem;
+	}
+
+	.projects-section figure.project:not(:last-child) {
+		@apply .mb-0;
+	}
+
+	.projects-section figure.project:nth-child(even) {
+		margin-top: -8rem;
+	}
+
+	.work-component__navigation nav {
+		@apply .flex-row;
+	}
+
+	.work-component__navigation nav button:not(:last-child) {
+		@apply .mr-12;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.projects-section figure {
+		max-width: 700px;
+	}
+}

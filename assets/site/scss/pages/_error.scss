@@ -1,0 +1,29 @@
+.page-error-component__wrap,
+.page-error {
+	@apply .min-h-screen;
+	@apply .text-center;
+}
+
+.page-error img,
+.page-error .site__button {
+	@apply .mb-16;
+}
+
+.page-error .site__button {
+	@apply .mt-0;
+}
+
+.page-error .site__button:hover::before {
+	@apply .bg-orange;
+}
+
+.page-error {
+	margin-top: 11rem;
+	@apply .px-8;
+	@apply .bg-metallicGold;
+	@apply .flex;
+	@apply .items-center;
+	@apply .justify-center;
+	@apply .flex-col;
+	@apply .text-charcoal;
+}

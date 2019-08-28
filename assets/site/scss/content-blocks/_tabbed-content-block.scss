@@ -1,0 +1,65 @@
+.tabbed__navigation {
+	margin: 0 calc(-50vw + 50%);
+	background: rgba(0, 0, 0, 0.1);
+	border-color: rgba(255, 255, 255, 0.2);
+	@apply .w-screen;
+	@apply .mb-12;
+	@apply .border-t;
+	@apply .border-b;
+}
+
+.tabbed__navigation nav {
+	@apply .mx-auto;
+}
+
+.tabbed__navigation button {
+	@apply .py-4;
+	@apply .px-16;
+	transition: all 0.5s ease-out;
+}
+
+.tabbed__navigation button:hover {
+	@apply .bg-mustard;
+	@apply .text-milk;
+}
+
+.tabbed__navigation button.active {
+	@apply .bg-orange;
+	@apply .text-milk;
+	@apply .cursor-default;
+}
+
+.tab-container {
+	@apply .overflow-hidden;
+}
+
+.tabbed-section__wrap .content__block {
+	@apply .p-0;
+	@apply .m-0;
+}
+
+.tabbed-section__wrap .content__block:not(:last-of-type) {
+	@apply .mb-6;
+}
+
+@media screen and (min-width: 600px) {
+	.tabbed__navigation nav {
+		@apply .max-w-xl;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	.tabbed__navigation nav {
+		@apply max-w-4xl;
+	}
+
+	.tabbed-section__wrap .content__block-content-split__content p {
+		@apply .px-8;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.tabbed__navigation nav  {
+		@apply .max-w-6xl;
+	}
+}

@@ -1,0 +1,8 @@
+.content__block-image {
+	@apply .py-0;
+}
+
+.content__block-image figure,
+.content__block-image img {
+	@apply .w-full;
+}

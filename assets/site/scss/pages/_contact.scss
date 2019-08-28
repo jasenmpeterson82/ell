@@ -1,0 +1,78 @@
+.page-contact {
+	padding-top: 0;
+	@apply .bg-charcoal;
+	@apply .py-24;
+}
+
+.body-contact .page__background-image {
+	@apply .relative;
+}
+
+.body-contact .content__block-intro {
+	@apply .absolute;
+	@apply .left-0;
+	@apply .right-0;
+	@apply .top-0;
+	@apply .bottom-0;
+	@apply .m-auto;
+	@apply .justify-center;
+}
+
+.body-contact h4 {
+	font-family: pt-serif-pro,sans-serif;
+	text-transform: lowercase;
+}
+
+
+.page-contact .contact-form {
+	background-color: transparent;
+	@apply .text-milk;
+	@apply .py-0;
+}
+
+.page-contact .contact-form form {
+	@apply .pl-0;
+}
+
+.page-contact .content__block-intro {
+	@apply .flex-col;
+}
+
+.page-contact .contact-form .wrap {
+	@apply .max-w-3xl;
+}
+
+.page-contact .content__block-intro header,
+.page-contact .content__block-intro article {
+	max-width: none;
+	@apply .w-full;
+}
+
+.page-contact .content__blocks .content__block:last-child {
+	@apply .mb-0;
+}
+
+.page-contact .contact-form .wrap > div:first-child header {
+	@apply .hidden;
+}
+
+.page-contact .form-input {
+	@apply .border-milk;
+}
+
+.page-contact .site__button-form {
+	@apply .border-milk;
+	@apply .text-milk;
+}
+
+@media screen and (min-width: 767px) {
+	.body-contact .content__block-intro {
+		@apply .justify-start;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.body-contact .careers {
+		@apply .pr-12;
+	}
+}

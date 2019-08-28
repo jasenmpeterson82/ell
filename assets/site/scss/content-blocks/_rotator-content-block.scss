@@ -1,0 +1,121 @@
+.content__block.content__block-rotator {
+	@apply .p-0;
+}
+
+.content__block.content__block-rotator .slides {
+	@apply .relative;
+	@apply .w-full;
+	@apply .h-full;
+}
+
+.content__block.content__block-rotator .slides,
+.content__block.content__block-rotator .slide {
+	@apply .overflow-hidden;
+}
+
+.content__block.content__block-rotator .slides figure {
+	@apply .hidden;
+	@apply .absolute;
+	@apply .bottom-0;
+}
+
+.content__block.content__block-rotator .subheader,
+.content__block.content__block-rotator .headline {
+	@apply .lowercase;
+}
+
+.content__block-rotator {
+	@apply .w-full;
+}
+
+.content__block-rotator .slide {
+	@apply .absolute;
+	@apply .top-0;
+	@apply .left-0;
+}
+
+.content__block-rotator .slide,
+.content__block-rotator .slide main {
+	@apply .w-full;
+	@apply .h-full;
+}
+
+.content__block-rotator .slide main {
+	@apply .flex;
+	@apply .justify-center;
+	@apply .items-center;
+	@apply .relative;
+	@apply .z-20;
+}
+
+.content__block-rotator .slide article {
+	@apply .px-8;
+}
+
+.content__block-rotator .site__button {
+	@apply .mt-0;
+}
+
+.content__block-rotator h4 {
+	font-family: pt-serif-pro, sans-serif;
+	@apply .mb-2;
+}
+
+.content__block-rotator h1 {
+	font-size: 2.2rem;
+	@apply .leading-tight;
+	@apply .text-beige;
+}
+
+.content__block-rotator .headline .gray {
+	@apply .text-gray;
+}
+
+.content__block-rotator .site__button {
+	@apply .self-start;
+}
+
+.content__block-rotator figure {
+	@apply .flex-grow;
+}
+
+.content__block-rotator figure img {
+	@apply .mx-auto;
+}
+
+.content__block-rotator-wrap .curtain {
+	transform-origin: left center;
+	@apply .bg-metallicGold;
+	@apply .absolute;
+	@apply .w-full;
+	@apply .h-full;
+	@apply .top-0;
+	@apply .right-0;
+	@apply .z-20;
+}
+
+@media screen and (min-width: 500px) {
+	.content__block-rotator .slide article {
+		@apply .p-0;
+		@apply .max-w-md;
+	}
+
+	.content__block.content__block-rotator .slides figure {
+		right: -25rem;
+		@apply .block;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.content__block-rotator .slide article {
+		@apply .max-w-2xl;
+	}
+
+	.content__block-rotator h1 {
+		font-size: 3.8rem;
+	}
+
+	.content__block-rotator h4 {
+		font-size: 1.2rem;
+	}
+}

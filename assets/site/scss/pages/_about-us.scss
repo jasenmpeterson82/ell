@@ -1,0 +1,183 @@
+.page-about-us .blurb-graphic {
+	@apply .w-48;
+	@apply .mx-auto;
+	@apply .my-8;
+	@apply .absolute;
+	@apply .hidden;
+}
+
+.page-about-us .content__block-intro {
+	@apply .py-40;
+}
+
+.page-about-us .content__block-content-split div:first-child,
+.page-about-us .content__block-content-split__image figure:not(:first-child) {
+	@apply .m-0;
+}
+
+.page-about-us .content__block-content-split {
+	@apply .items-start;
+}
+
+.page-about-us .content__block-content-split__content main {
+	@apply .px-8;
+	@apply .py-16;
+	@apply .max-w-3xl;
+	@apply .mx-auto;
+}
+
+.page-about-us .content__block-grid img {
+	@apply .w-full;
+}
+
+.page-about-us .content__block[data-row="1"],
+.page-about-us .content__block[data-row="3"],
+.page-about-us .content__block[data-row="3"] figure:not(:last-child),
+.page-about-us .content__block[data-row="4"],
+.page-about-us .content__block[data-row="5"],
+.page-about-us .content__block[data-row="6"] {
+	@apply .pb-2;
+}
+
+.page-about-us .content__block[data-row="2"] main,
+.page-about-us .content__block[data-row="4"] main,
+.page-about-us .content__block[data-row="6"] main,
+.page-about-us .content__block[data-row="7"] main {
+	grid-row-gap: 0.5rem;
+}
+
+.page-about-us .content__block-content-split[data-row="2"] {
+	@apply .relative;
+	@apply .z-10;
+}
+
+.page-about-us .content__block-content-split[data-row="3"] {
+	@apply .flex-col;
+
+	@apply .relative;
+	@apply .overflow-hidden;
+	max-width: none;
+}
+
+.page-about-us .content__block-content-split[data-row="3"] main figure {
+	@apply .w-48;
+	@apply .mx-auto;
+	@apply .mt-8;
+}
+
+.page-about-us .content__block-content-split[data-row="3"] div:not(.content__block-content-split__content) {
+	@apply .w-full;
+}
+
+.page-about-us .content__block-grid[data-row="4"] {
+
+}
+
+@media screen and (min-width: 767px) {
+	.page-about-us .content__block-intro {
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+	}
+
+	.page-about-us .content__block[data-row="2"] main,
+	.page-about-us .content__block[data-row="4"] main,
+	.page-about-us .content__block[data-row="6"] main,
+	.page-about-us .content__block[data-row="7"] main {
+		grid-column-gap: 0.5rem;
+	}
+
+	.page-about-us .content__block-content-split[data-row="3"] main figure {
+		@apply .w-64;
+	}
+
+	.page-about-us .headline-graphic {
+		@apply .mb-0;
+	}
+
+	.page-about-us .content__block-intro {
+		@apply .flex-row;
+		@apply .justify-between;
+	}
+
+	.page-about-us .content__block-intro header {
+		@apply .w-2/6;
+	}
+
+	.page-about-us .content__block-image {
+		@apply .mb-0;
+	}
+
+	.page-about-us .content__block-grid div:not(:last-child) {
+		@apply .p-0;
+	}
+
+	.page-about-us .content__block-content-split {
+		@apply .pt-0;
+		@apply .mb-0;
+	}
+
+	.page-about-us .content__block-content-split div {
+		@apply .w-full;
+	}
+
+	.page-about-us .content__block-content-split.row-reverse div:last-child {
+		@apply .pr-0;
+	}
+
+	.page-about-us .content__block-grid[data-row="2"]:nth-child(3) {
+		@apply .mb-0;
+	}
+
+	.page-about-us .content__block-grid[data-row="4"]  {
+		@apply .pt-0;
+	}
+}
+
+@media screen and (min-width: 990px) {
+	.page-about-us .blurb-graphic {
+		@apply .block;
+		width: 36rem;
+		top: -6rem;
+	}
+
+	.page-about-us .content__block-content-split[data-row="3"] {
+		max-width: none;
+		@apply .flex-row-reverse;
+	}
+
+	.page-about-us .content__block[data-row="3"] figure:not(:last-child) {
+		@apply .pt-2;
+	}
+
+	.page-about-us .content__block-content-split[data-row="3"] .content__block-content-split__image {
+		padding-right: 0.44rem;
+	}
+
+	.page-about-us .content__block-content-split[data-row="3"] .content__block-content-split__content {
+		@apply .flex;
+		@apply .flex-col;
+		@apply .justify-center;
+		@apply .h-full;
+	}
+
+	.page-about-us .content__block-content-split main {
+		@apply .pt-4;
+		@apply .pb-0;
+		@apply .pl-8;
+	}
+
+	.page-about-us .content__block-content-split[data-row="3"] main figure {
+		@apply .w-48;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.page-about-us .blurb-graphic {
+		width: 36rem;
+	}
+
+	.page-about-us .content__block-content-split[data-row="3"] main figure {
+		@apply .mt-6;
+		@apply .w-64;
+	}
+}

@@ -1,0 +1,189 @@
+.contact-form {
+	@apply .bg-tan;
+	@apply .px-8;
+	@apply .py-24;
+	@apply .text-charcoal;
+}
+
+.contact-form form {
+	@apply .mt-12;
+	@apply .flex-grow;
+}
+
+.contact-form .sk-cube-grid {
+	width: 20px;
+	height: 20px;
+	@apply .mx-auto;
+}
+
+.contact-form .wrap {
+	@apply .flex;
+	@apply .flex-col;
+}
+
+.contact-form header,
+.contact-form .careers {
+	@apply .mb-8;
+}
+
+.contact-form h1 {
+	font-size: 3.5rem;
+	@apply .leading-none;
+	@apply .mb-6;
+}
+
+.contact-form h3 {
+	font-size: 2rem;
+}
+
+.contact-form label {
+	@apply .block;
+}
+
+.form-input {
+	background-color: transparent;
+	@apply .w-full;
+	@apply .py-2;
+	@apply .border-b;
+	@apply .border-charcoal;
+}
+
+.form-input:focus {
+	outline: 0;
+}
+
+.contact-form form .input-wrap:not(:last-of-type) {
+	@apply .mb-8;
+}
+
+.contact-form .button-wrap {
+	@apply .text-center;
+}
+
+.contact-form textarea {
+	height: 10rem;
+}
+
+input,
+button,
+textarea,
+select {
+	@apply appearance-none;
+}
+
+.msg-block {
+	@apply .bg-milk;
+	@apply .border-t-4;
+	@apply .px-4;
+	@apply .py-3;
+	@apply .shadow-md;
+}
+
+.msg-block svg {
+	@apply .fill-current;
+	@apply .h-6;
+	@apply .w-6;
+	@apply .mr-4;
+}
+
+.msg-block p {
+	font-size: 0.9rem;
+	@apply .font-bold;
+}
+
+.error__block {
+	@apply .border-ketchup;
+	@apply .rounded-b;
+	@apply .text-ketchup;
+}
+
+.error__block svg {
+	@apply .text-ketchup;
+}
+
+.success__block svg {
+	@apply .text-blueberry;
+	@apply .mr-2;
+}
+
+.success__block p {
+	@apply .text-blueberry;
+}
+
+.error__block p {
+	@apply .text-ketchup;
+}
+
+.error__block ul li:not(:last-child) {
+	@apply .mb-4;
+}
+
+.form-success {
+	@apply .mb-12;
+	@apply .mx-auto;
+}
+
+@media screen and (min-width: 600px) {
+	.contact-form .wrap {
+		@apply .max-w-sm;
+		@apply .mx-auto;
+	}
+
+	.contact-form header,
+	.contact-form careers {
+		@apply .max-w-xs;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.contact-form form {
+		@apply .pl-8;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.contact-form form {
+		@apply .mt-0;
+	}
+
+	.contact-form {
+		@apply .py-32;
+	}
+
+	.contact-form .wrap {
+		@apply .max-w-2xl;
+		@apply .flex-row;
+	}
+
+	.contact-form .button-wrap {
+		@apply .text-left;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.contact-form h1 {
+		font-size: 3rem;
+	}
+
+	.contact-form h3 {
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.contact-form .wrap {
+		@apply .max-w-3xl;
+	}
+
+	.contact-form .wrap > div:first-child {
+		@apply .pr-16;
+	}
+
+	.contact-form h1 {
+		font-size: 3.5rem;
+	}
+
+	.contact-form h3 {
+		font-size: 3rem;
+	}
+}

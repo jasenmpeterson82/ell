@@ -1,0 +1,44 @@
+body {
+	font-family: pt-serif-pro, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	@apply .text-milk;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: xants, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 2rem;
+	@apply .leading-snug;
+}
+
+h2 {}
+
+h3 {
+	@apply .leading-none;
+}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+p:not(:last-child) {
+	@apply .mb-4;
+}
+
+@media screen and (min-width: 1440px) {
+	p {
+		font-size: 1.1rem;
+	}
+}

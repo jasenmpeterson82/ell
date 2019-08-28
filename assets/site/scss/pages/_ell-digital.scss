@@ -1,0 +1,97 @@
+.page-digital .content__block-intro h4 {
+	@apply .hidden;
+}
+
+.page-digital .content__block[data-row="0"] {
+	@apply .mb-0;
+}
+
+.page-digital  .content__block[data-row="1"] {
+	@apply .pt-6;
+}
+
+.page-digital .content__block[data-row="2"] {
+	@apply .mb-12;
+}
+
+.page-digital .content__block[data-row="3"] {
+	@apply .my-24;
+}
+
+.page-digital .content__block[data-row="3"] figure {
+	@apply .px-12;
+	@apply .max-w-6xl;
+	@apply .mx-auto;
+}
+
+.page-digital .content__block[data-row="4"] {
+	@apply .mb-24;
+}
+
+.page-digital .content__block-simple-rotator {
+	margin: 0 calc(-50vw + 50%);
+	@apply .w-screen;
+}
+
+.page-digital .content__block-simple-rotator .carousel-cell {
+	width: 66%;
+	@apply .mr-8;
+}
+
+.page-digital .content__block-simple-rotator .carousel-cell img {
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
+	@apply .opacity-50;
+	transition: all 0.5s ease-out;
+}
+
+.page-digital .content__block-simple-rotator .carousel-cell.is-selected img {
+	@apply .opacity-100;
+}
+
+.page-digital .content__block {
+	@apply .pt-0;
+	@apply .mb-4;
+}
+
+.page-digital .flickity-prev-next-button.next {
+	right: 50px;
+}
+
+.page-digital .flickity-prev-next-button.previous {
+	left: 50px;
+}
+
+
+@media screen and (min-width: 767px) {
+	.page-digital .content__block[data-row="0"] {
+		@apply .pl-16;
+	}
+
+	.page-digital .content__block[data-row="0"] figure {
+		@apply .max-w-xs;
+	}
+
+	.page-digital .content__block-intro {
+		width: 50%;
+		max-width: 792px;
+		@apply .py-0;
+		@apply .flex-col;
+		@apply .m-0;
+		@apply .pl-16;
+	}
+
+	.page-digital .content__block-sidebar {
+		@apply .mt-0;
+	}
+
+	.page-digital .content__block-intro header,
+	.page-digital .content__block-intro article {
+		max-width: none;
+		@apply .w-full;
+	}
+
+	.page-digital .content__block-sidebar figure {
+		height: 600px;
+		top: 5rem;
+	}
+}

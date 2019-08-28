@@ -1,0 +1,183 @@
+.site-menu .wrap {
+	@apply .pb-2;
+	@apply .overflow-x-hidden;
+	@apply .mx-auto;
+	@apply max-w-4xl;
+	@apply .flex;
+	@apply .flex-col;
+}
+
+.site-menu {
+	z-index: 99999;
+	padding-top: 10rem;
+	@apply .opacity-0;
+	@apply .bg-tan;
+	@apply .fixed;
+	@apply .w-screen;
+	@apply .min-h-screen;
+	@apply .top-0;
+	@apply .left-0;
+	@apply .px-8;
+}
+
+.site-menu a {
+	@apply .block;
+	@apply .text-charcoal;
+	@apply .relative;
+	font-family: xants, sans-serif;
+}
+
+.site-menu .menu-item {
+	@apply .mb-3;
+}
+
+.site-menu header,
+.site-menu .page-link {
+	@apply .lowercase;
+}
+
+.site-menu header,
+.site-menu .page-link,
+.meta-box.phone p,
+.meta-box.address p,
+.meta-box .social-media a {
+	@apply .opacity-0;
+}
+
+.site-menu .page-link,
+.meta-box.phone p,
+.meta-box.address p {
+	transform: translateX(30px);
+}
+
+.site-menu header,
+.meta-box .social-media a {
+	transform: translateY(15px);
+}
+
+.site-menu h4 {
+	@apply .font-bold;
+	@apply .text-gold;
+	@apply .mb-4;
+}
+
+.meta-box {
+	@apply .not-italic;
+	@apply .text-charcoal;
+	@apply .mb-4;
+}
+
+.meta-box p {
+	font-size: 1rem;
+}
+
+.meta-box.address p {
+	@apply .mb-0;
+}
+
+.meta-box.social-media {
+	@apply .block;
+}
+
+.meta-box .social-media {
+	@apply justify-start;
+}
+
+.meta-box.social-media a {
+	@apply .mr-1;
+}
+
+.meta-box .social-media a {
+	@apply .text-charcoal;
+	@apply .lowercase;
+}
+
+.meta-box .social-media figure {
+	@apply .bg-charcoal;
+}
+
+.meta-box .social-media svg path,
+.meta-box .social-media svg circle {
+	fill: #fff;
+}
+
+@media screen and (min-width: 600px) {
+	.site-menu .wrap {
+		@apply .flex-row;
+		@apply .flex-no-wrap;
+		@apply justify-between;
+	}
+
+	.site-menu a {
+		font-size: 1rem;
+	}
+
+	.site-menu .wrap nav:first-child,
+	.site-menu .wrap nav:last-child div:first-child {
+		@apply .mr-8;
+	}
+}
+
+.site-menu .ell__simple-bar {
+	height: 70vh;
+}
+
+@media screen and (min-width: 700px) {
+	.site-menu a {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	.site-menu a.page-link::before {
+		content: '';
+		width: 145px;
+		height: 19px;
+		bottom: -1.2rem;
+		@apply .left-0;
+		@apply .bg-tan;
+		@apply .z-10;
+		@apply .absolute;
+		transition: all 0.2s ease-out;
+	}
+
+	.site-menu a.page-link::after {
+		content: url('https://assets.ellcdn.com/ell-site/hover.png');
+		width: 145px;
+		height: 19px;
+		bottom: -0.2rem;
+		@apply .left-0;
+		@apply .opacity-0;
+		@apply .absolute;
+		transition: all 0.3s ease-out;
+	}
+
+	.site-menu a.page-link:hover::before {
+		transform: translateX(-100%);
+	}
+
+	.site-menu a.page-link:hover::after {
+		@apply .opacity-100;
+	}
+
+	.site-menu .menu-item {
+		@apply .mb-6;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.site-menu a {
+		font-size: 2rem;
+	}
+
+	.site-menu .wrap nav:first-child,
+	.site-menu .wrap nav:last-child div:first-child {
+		@apply .mr-24;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.site-menu {
+		@apply .pt-48;
+	}
+}

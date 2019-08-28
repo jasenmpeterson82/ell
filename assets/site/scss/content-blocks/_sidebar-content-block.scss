@@ -1,0 +1,98 @@
+.content__block-sidebar {
+	@apply .flex;
+	@apply .items-center;
+	@apply .flex-col;
+	@apply .pt-0;
+	@apply .relative;
+	@apply .mt-24;
+	@apply .bg-charcoal;
+}
+
+.content__block-sidebar figure {
+	@apply .absolute;
+	width: 20rem;
+	top: -5rem;
+}
+
+.content__block-sidebar h4 {
+	font-size: 1.5rem;
+	@apply .text-metallicGold;
+	@apply .lowercase;
+	@apply .mb-4;
+}
+
+.content__block-sidebar h4::after {
+	content: '';
+	height: 2px;
+	@apply block;
+	@apply .w-8;
+	@apply .bg-milk;
+	@apply .mt-1;
+}
+
+.content__block-sidebar .list li {
+	@apply .relative;
+}
+
+.content__block-sidebar .list li::before {
+	@apply .absolute;
+	content: url('https://assets.ellcdn.com/ell-site/Bullet.png');
+	left: -1.5rem;
+	@apply .w-24;
+}
+
+.content__block-sidebar .list li:not(:last-child) {
+	@apply .mb-3;
+}
+
+.content__block-sidebar .wrap {
+	@apply .bg-charcoal;
+	@apply .py-8;
+	@apply .px-12;
+	@apply .relative;
+	@apply .z-10;
+}
+
+@media screen and (min-width: 767px) {
+	.content__block-sidebar {
+		@apply .ml-auto;
+		width: 45%;
+		background-color: transparent;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.content__block-sidebar figure {
+		top: -1rem;
+	}
+	.content__block-sidebar {
+		width: 37%;
+	}
+
+	.content__block-sidebar .wrap {
+		width: 450px;
+	}
+
+	.content__block-sidebar figure {
+		top: -1rem;
+		width: 33rem;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.content__block-sidebar {
+		@apply .static;
+	}
+
+	.content__block-sidebar figure {
+		@apply .w-auto;
+	}
+
+	.content__block-sidebar h4 {
+		font-size: 1.8rem;
+	}
+
+	.content__block-sidebar .list li {
+		font-size: 1.1rem;
+	}
+}

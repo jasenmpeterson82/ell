@@ -1,0 +1,90 @@
+footer {
+	@apply px-8;
+	@apply .pt-8;
+	@apply .pb-12;
+	@apply .text-gray;
+	@apply .border-t-8;
+	@apply .border-orange;
+}
+
+footer .wrap {
+	@apply .flex;
+	@apply .flex-col;
+}
+
+footer > div:not(:last-child) {
+	@apply .mb-6;
+}
+
+footer .copyright {
+	@apply .flex;
+	@apply .flex-col;
+	@apply .mt-3;
+}
+
+footer .copyright a {
+	@apply .text-mustard;
+	transition: all 0.5s ease-out;
+}
+
+footer .copyright a:hover {
+	@apply .text-beige;
+}
+
+@media screen and (min-width: 600px) {
+	footer {
+		@apply .py-6;
+		@apply .px-8;
+	}
+
+	footer .wrap > div {
+		@apply .w-1/2;
+	}
+
+	footer .wrap > div:not(:last-child) {
+		@apply .mb-0;
+	}
+
+	footer .wrap {
+		@apply .flex-row;
+		@apply .justify-between;
+		@apply .items-center;
+		@apply .max-w-4xl;
+		@apply .mx-auto;
+	}
+}
+
+@media screen and (min-width: 990px) {
+	footer .wrap > div:not(:last-child) {
+		@apply .flex;
+		@apply .items-center;
+	}
+
+	footer .site__logo {
+		@apply .w-auto;
+	}
+
+	footer .copyright {
+		@apply .mt-0;
+		@apply .flex-grow;
+		@apply .flex-row;
+		@apply .self-end;
+		@apply ml-16;
+	}
+
+	footer .copyright div:first-child {
+		@apply .mr-4;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	footer .wrap {
+		@apply .max-w-5xl;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	footer .wrap {
+		@apply .max-w-6xl;
+	}
+}
